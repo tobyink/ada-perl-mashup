@@ -9,5 +9,5 @@ greeter.o: greeter.adb greeter.ads
 clean:
 	rm -rf greeter.ali greeter.o greeter libgreeter.so 
 
-test:
+test: libgreeter.so greeter.pl
 	perl greeter.pl

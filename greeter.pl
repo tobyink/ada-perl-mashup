@@ -9,7 +9,7 @@ use warnings;
 package Greeter
 {
 	use constant ADADIR => '/usr/lib/gcc/x86_64-linux-gnu/4.4/rts-native/adalib/';
-	use constant OURDIR => do { (my $f = __FILE__) =~ s{/[^/]+$}//; $f || "." };
+	use constant OURDIR => do { (my $f = __FILE__) =~ s{[^/]+$}//; $f || "." };
 	
 	require DynaLoader;
 	our @ISA = 'DynaLoader';
