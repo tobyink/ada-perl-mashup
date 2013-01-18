@@ -8,3 +8,6 @@ greeter.o: greeter.adb greeter.ads
 
 clean:
 	rm -rf greeter.ali greeter.o greeter libgreeter.so 
+
+test:
+	perl greeter.pl
